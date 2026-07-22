@@ -1,0 +1,626 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8F1E7;
+    color:#2B1B12;
+    line-height:1.7;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ==========================
+           HEADER 
+========================== */
+
+header {
+    background: #EAD7C0;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 12px rgba(0,0,0,.05);
+}
+
+.nav {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #8B4513;
+}
+
+
+nav {
+    display: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #5C2E0B;
+}
+
+.btn-login {
+    text-decoration: none;
+    background: #8B4513;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    transition: .3s;
+    
+}
+
+.btn-login:hover {
+    background: #5C2E0B;
+}
+
+/* ==========================
+            HERO 
+========================== */
+
+.hero {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.hero p {
+    color: #777;
+    margin-bottom: 35px;
+    line-height: 1.8rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #8B4513;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 28px;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(139, 69, 19, .35);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.15);
+}
+
+/* ==========================
+           CLIENT
+========================== */
+
+.clients{
+    padding:30px 0;
+}
+
+.client-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    color:#999;
+    font-weight:600;
+}
+
+.client-grid span {
+    color: #999;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.client-grid span:hover{
+    color: #2B1B12;
+    transform: scale(1.05);
+}
+
+/* ==========================
+           TITLE 
+========================== */
+
+.title{
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:1.7rem;
+    margin-bottom:10px;
+    text-align: center;
+}
+
+.title p{
+    color:#777;
+    text-align: center;
+}
+
+/* ==========================
+         FEATURES 
+========================== */
+
+.features {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.feature-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.card {
+    width: 100%;
+
+    background: #FFFDF9;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.card i {
+    width: 60px;
+    height: 60px;
+    background: #8B4513;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card p {
+    color: #777;
+    line-height: 1.7;
+}
+
+/* ==========================
+            CTA 
+========================== */
+
+.cta,
+.bottom-cta{
+    padding:50px 0;
+}
+
+.cta-box{
+    background:#FFFDF9;
+    color:#8B4513;
+    border-radius:20px;
+    padding:30px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    justify-content:space-between;
+    align-items:center;
+    text-align: center;
+    line-height: normal;
+}
+
+.cta-box h2{
+    font-size: 1.8rem;
+    font-weight:400;
+    line-height: 1.3;
+}
+
+.cta-box a{
+    background:#8B4513;
+    color:#FFFDF9;
+    padding:15px 25px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.cta-box1{
+    background:#FFFDF9;
+    color:#8B4513;
+    border-radius:20px;
+    padding:30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.cta-box1 a{
+    background:#8B4513;
+    color:#FFFDF9;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+/* ==========================
+        HOW IT WORKS 
+========================== */
+
+.works {
+    padding: 60px 0;
+}
+
+.work {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.work .text {
+    flex: 1;
+}
+
+.work h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.work p {
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Gambar bekerja dipindah ke bawah teks di mobile jika ada varian .reverse */
+.reverse img{
+    order:0;
+}
+
+/* ==========================
+          PRICING 
+========================== */
+
+.pricing {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.price-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.price-card {
+    background: #18244b;
+    color: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+
+    transition: .3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.25);
+}
+
+.price-card.active {
+    transform: scale(1.05);
+    background: #23356d;
+}
+
+.price-card.active:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.price-card h4 {
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #EAD7C0;
+}
+
+.price-card h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.price-card li {
+    margin: 14px 0;
+    color: #ddd;
+}
+
+.price-card a {
+    display: inline-block;
+    text-decoration: none;
+    background: #EAD7C0;
+    color: #2B1B12;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.price-card a:hover {
+    background: #d8c0a3;
+}
+
+/* ==========================
+   FOOTER (mobile base)
+========================== */
+
+footer{
+    background:#EAD7C0;
+    color:#2B1B12;
+    padding:35px 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}
+
+.footer i{
+    margin-left:18px;
+    font-size: 1.1rem;
+    cursor:pointer;
+}
+
+/* ==========================
+          TABLET 
+========================== */
+
+@media(min-width:600px){
+
+    .hero h1{
+        font-size:2.6rem;
+    }
+
+    .title h2{
+        font-size:2.1rem;
+    }
+
+    .work h3{
+        font-size:1.7rem;
+    }
+
+    .price-card h2{
+        font-size:3.5rem;
+    }
+
+    .feature-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card,
+    .price-card,
+    .cta-box{
+        padding:40px;
+    }
+
+    .client-grid{
+        word-spacing: 40px;
+    }
+}
+
+/* ==========================
+         DESKTOP
+========================== */
+
+@media(min-width:992px){
+
+    nav{
+        display:flex;
+    }
+
+    .hero{
+        padding: 90px 0;
+        text-align: left;
+    }
+
+    .hero-grid{
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .hero h1{
+        font-size:3.8rem;
+    }
+
+    .hero-image img{
+        width: 150vh;
+        max-width: 1200px;
+    }
+
+    .title{
+        margin-bottom:80px;
+    }
+
+    .title h2{
+        font-size:2.5rem;
+    }
+
+    .features{
+        padding: 90px 0;
+    }
+
+    .feature-grid{
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .card{
+        padding: 40px 60px;
+    }
+
+    .cta,
+    .bottom-cta{
+        padding:80px 0;
+    }
+
+    .cta-box{
+        flex-direction: row;
+        padding:150px;
+        line-height: 80px;
+    }
+
+    .cta-box h2{
+        font-size: 2.5rem;
+        line-height: 70px;
+    }
+
+    .cta-box a{
+        padding:25px 40px;
+    }
+
+    .cta-box1{
+        flex-direction: row;
+        padding:60px;
+    }
+
+    .works{
+        padding: 100px 0;
+    }
+
+    .work{
+        flex-direction: row;
+        text-align: left;
+        margin-bottom: 80px;
+    }
+
+    .pricing{
+        padding: 100px 0;
+    }
+
+    .price-grid{
+        margin-top: 50px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .price-card{
+        padding: 50px 35px;
+    }
+
+    .price-card h2{
+        font-size: 4rem;
+    }
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .client-grid{
+        word-spacing: 80px;
+    }
+}
+
+
+
