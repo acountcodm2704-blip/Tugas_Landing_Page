@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Akun</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container{
+            background: white;
+            width: 350px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label{
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .gender{
+            margin-top: 10px;
+        }
+
+        .gender input{
+            width: auto;
+        }
+
+        button{
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Registrasi Akun</h2>
+
+    <form action="#" method="post">
+
+        <label>Nama Lengkap</label>
+        <input type="text" name="nama" placeholder="Masukkan nama lengkap" required>
+
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Masukkan username" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Masukkan email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Masukkan password" required>
+
+        <label>Konfirmasi Password</label>
+        <input type="password" name="konfirmasi" placeholder="Ulangi password" required>
+
+        <label>Tanggal Lahir</label>
+        <input type="date" name="tanggal">
+
+        <label>Jenis Kelamin</label>
+
+        <div class="gender">
+            <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+            <input type="radio" name="jk" value="Perempuan"> Perempuan
+        </div>
+
+        <label>Negara</label>
+        <select>
+            <option>Indonesia</option>
+            <option>Malaysia</option>
+            <option>Singapura</option>
+            <option>Thailand</option>
+        </select>
+
+        <br><br>
+
+        <input type="checkbox" required>
+        Saya menyetujui syarat dan ketentuan.
+
+        <button type="submit">Daftar</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
